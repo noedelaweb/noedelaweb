@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Noedelaweb — marketing digital y estrategia." />
+  <title>Noedelaweb | Marketing digital</title>
+  <!-- INSTALACIÓN GTM, cuando tengas tu contenedor:
+       Pega el primer fragmento oficial de GTM inmediatamente DEBAJO de <head>.
+       El segundo fragmento va inmediatamente DEBAJO de <body>.
+       No inventes un ID: copia ambos fragmentos desde Google Tag Manager. -->
+  <style>
+    :root{--navy:#151c37;--blue:#3b68ed;--soft:#f4f6fb;--text:#28324a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55}
+    a{color:inherit}header{border-bottom:1px solid #e7eaf2}nav{max-width:1080px;margin:auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font-weight:850;color:var(--navy);font-size:1.3rem;letter-spacing:-.05em;text-decoration:none}nav a.navlink{font-size:.9rem;text-decoration:none;color:#566079}main{max-width:1080px;margin:auto;padding:0 24px}.hero{padding:100px 0 95px;max-width:800px}.eyebrow{color:var(--blue);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em}h1{font-size:clamp(2.7rem,6vw,5.5rem);line-height:1.06;letter-spacing:-.07em;color:var(--navy);margin:20px 0 22px}h2{font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.045em;color:var(--navy);margin:0 0 12px}.hero p{font-size:1.17rem;max-width:600px;color:#657087}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.button{border:0;border-radius:10px;background:var(--blue);color:white;padding:13px 20px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer;display:inline-block}.button.secondary{background:#edf1fe;color:#284ec3}.section{padding:66px 0;border-top:1px solid #e9edf4}.muted{color:#647087}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.card{border:1px solid #e7eaf2;border-radius:15px;padding:23px;background:#fff}.card strong{color:var(--navy)}.card p{color:#657087;margin-bottom:0}.contact{background:var(--soft);border-radius:24px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:20px 0 80px}.contact h2{margin-top:0}form{display:flex;flex-direction:column;gap:12px}label{font-size:.84rem;font-weight:700}input,textarea{width:100%;border:1px solid #cdd5e5;background:white;border-radius:8px;padding:12px;font:inherit;color:var(--navy)}textarea{min-height:100px;resize:vertical}.notice{font-size:.82rem;color:#6b7386;margin:0}.success{padding:12px;border-radius:10px;background:#e6f6ec;color:#116e39;font-weight:650;display:none}footer{text-align:center;color:#8690a2;border-top:1px solid #e7eaf2;padding:30px 20px;font-size:.85rem}@media(max-width:680px){.hero{padding:70px 0}.cards{grid-template-columns:1fr}.contact{grid-template-columns:1fr;padding:24px;gap:16px}nav{padding:18px 24px}}
+  </style>
+</head>
+<body>
+  <!-- Pega aquí el segundo fragmento oficial (noscript) de GTM. -->
+  <header><nav><a class="brand" href="#inicio">noedelaweb<span style="color:var(--blue)">.</span></a><a class="navlink" href="#contacto">Contacto</a></nav></header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="eyebrow">Marketing digital · Portafolio y servicios</div>
+      <h1>Ideas claras.<br />Resultados medibles.</h1>
+      <p>Hola, soy Noé. Desarrollo estrategias de marketing, contenido y campañas digitales con enfoque en resultados.</p>
+      <div class="buttons">
+        <a class="button" id="btn-cotizacion" href="#contacto">Solicitar información</a>
+        <a class="button secondary" id="btn-whatsapp" href="https://wa.me/?text=Hola%2C%20quiero%20conocer%20los%20servicios%20de%20Noedelaweb" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
+      </div>
+    </section>
+    <section class="section" id="servicios"><div class="eyebrow">Lo que hago</div><h2>Servicios y experiencia</h2><div class="cards"><article class="card"><strong>Paid Media</strong><p>Campañas en Google Ads y Meta Ads.</p></article><article class="card"><strong>Contenido</strong><p>Estrategia creativa y comunicación digital.</p></article><article class="card"><strong>Medición</strong><p>Seguimiento de eventos y análisis de resultados.</p></article></div></section>
+    <section class="section" id="contacto"><div class="contact"><div><div class="eyebrow">Laboratorio de medición</div><h2>Hablemos de tu proyecto.</h2><p class="muted">Esta es una página de prueba para practicar Google Tag Manager y GA4. El formulario simula un envío exitoso: no envía ni almacena los datos.</p></div>
+      <form id="form-contacto"><div><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="off" required placeholder="Tu nombre" /></div><div><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="off" required placeholder="tu@correo.com" /></div><div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required placeholder="Cuéntame brevemente... "></textarea></div><button class="button" id="btn-enviar-formulario" type="submit">Enviar formulario de prueba</button><p class="notice">Solo demostración: no se envía información a ningún destinatario.</p><div id="mensaje-exito" class="success" role="status" aria-live="polite">¡Prueba exitosa! El formulario fue validado y se generó el evento de demostración.</div></form>
+    </div></section>
+  </main><footer>© <span id="anio"></span> Noedelaweb · Página de demostración para medición digital</footer>
+  <script>
+    // El dataLayer permite escuchar un evento de éxito en GTM sin enviar datos personales.
+    window.dataLayer = window.dataLayer || [];
+    document.getElementById('anio').textContent = new Date().getFullYear();
+    document.getElementById('form-contacto').addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (!this.reportValidity()) return;
+      document.getElementById('mensaje-exito').style.display = 'block';
+      window.dataLayer.push({event:'formulario_demo_exitoso',form_id:'form-contacto',form_type:'demo'});
+      this.reset();
+    });
+  </script>
+</body>
+</html>
